@@ -111,6 +111,12 @@ class _MemoramaState extends State<Memorama> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Diego Castillo Pardo'),
+        actions: [
+          IconButton(
+            onPressed: _game,
+            icon: const Icon(Icons.refresh),
+          ),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(12),
